@@ -14,7 +14,7 @@ environment {
         stage ('SCM') {
             steps {
                 checkout([$class: 'GitSCM', 
-                	branches: [[name: '*/main']], doGenerateSubmoduleConfigurations: false, 
+                	branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, 
                 	extensions: [], 
                 	submoduleCfg: [], 
                 	userRemoteConfigs: [[url: 'https://github.com/bharath0417/simple-web.git']]])

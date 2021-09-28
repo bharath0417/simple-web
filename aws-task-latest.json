@@ -1,6 +1,9 @@
 {
     "family": "aws-task-latest",
-    "containerDefinitions": [
+    "requiresCompatibilities": [
+        "FARGATE"
+    ]
+    "containerDefinitions" [
         {
             "image": "%REPOSITORY_URI%:v_%BUILD_NUMBER%",
             "name": "aws-task-latest",
@@ -8,12 +11,9 @@
             "memory": 256,
             "essential": true,
             "networkMode": "awsvpc",
-            "requiresCompatibilities": [ 
-                "FARGATE" ]
             "portMappings": [
                 {
-		    "containerPort": 8088,
-                    "hostPort": 8088
+		    "containerPort": 8088
                 }
             ]
         }

@@ -7,6 +7,9 @@
             "cpu": 10,
             "memory": 256,
             "essential": true,
+            "networkMode": "awsvpc",
+            "requiresCompatibilities": [ 
+                "FARGATE" ]
             "portMappings": [
                 {
 		    "containerPort": 8088,

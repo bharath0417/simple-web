@@ -86,6 +86,50 @@ Create an ECS Cluster :
 
 ![image](https://user-images.githubusercontent.com/41754537/135728708-ddf1b4de-c99c-4323-ad8d-d722ad7ce711.png)
 
+We have to provide the Ec2 machine with Roles as below :
+
+https://docs.amazonaws.cn/en_us/AmazonECS/latest/developerguide/task_execution_IAM_role.html
+
+Steps as Below :
+
+the project should be cloned to your workspace ,so enable your repo so jenkins is notified when files are pushed 
+
+create a pipeline project and simple copy jenkinsfile or use scm 
+
+![image](https://user-images.githubusercontent.com/41754537/135729168-e9c6758e-58b5-4016-ad7f-b5a1e5781cd4.png)
+
+The pipeline stahe view is following:
+
+![image](https://user-images.githubusercontent.com/41754537/135729412-c48ab715-7f36-416e-b0e2-b5d41003e4ba.png)
+
+Clone the project and replace the ECR Repo,Cluster Name,Repository Name as your wish and run the jenkis Job:
+
+![image](https://user-images.githubusercontent.com/41754537/135729522-8a06a996-7941-49b4-8188-545de6cbb42f.png)
+
+![image](https://user-images.githubusercontent.com/41754537/135729535-9d067387-9810-4861-8c3d-45ce9592e00b.png)
+
+![image](https://user-images.githubusercontent.com/41754537/135729571-bec7ce71-0279-418f-badf-8d269b33363f.png)
+
+![image](https://user-images.githubusercontent.com/41754537/135729586-675af1ff-6e58-42b7-a472-35717ed15cf4.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

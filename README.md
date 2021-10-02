@@ -49,12 +49,46 @@ Project we are going to build
 Prerequisites
 
 Ec2-Instance-Any Linux OS
+
 Python — a prerequisite for the AWS CLI
+
 PIP — a prerequisite for the AWS CLI
-Install AWS CLI 
+
+Install AWS CLI
+
 jq — a command line utility for parsing JSON output
-Install Git 
-Install Docker 
+
+Install Git : yum install git -y
+
+Install Docker :
+
+yum install docker -y 
+
+ service docker start
+ 
+ usermod -aG docker jenkins
+  
 Install Jenkins
+
+sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stab
+
+sudo rpm --import https://jenkins-ci.org/redhat/jenkins
+
+sudo yum install jenkins -y
+
+sudo service jenkins start
+
+Create an ECR Registry
+
+![image](https://user-images.githubusercontent.com/41754537/135728681-9b8e611b-03fb-4c1c-a2d0-0fa84a0d4380.png)
+
+Create an ECS Cluster :
+
+![image](https://user-images.githubusercontent.com/41754537/135728708-ddf1b4de-c99c-4323-ad8d-d722ad7ce711.png)
+
+
+
+
+
 
 
